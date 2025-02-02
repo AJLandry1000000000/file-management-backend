@@ -11,4 +11,9 @@ Rails.application.routes.draw do
   post 'import', to: 'import#csv_import'
 
   resources :people, only: [:index]
+
+  resources :locations, only: [:index]
+  
+  resources :affiliations, only: [:index]
+
 end
