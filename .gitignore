@@ -39,3 +39,6 @@
 
 # Gem lock
 Gemfile.lock
+
+# .github directory
+.github/*
