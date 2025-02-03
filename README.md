@@ -55,7 +55,7 @@ To follow this setup guide you should already have Ruby, Rails, RVM, Git, and Po
         DB_PORT="5432" 
         ENV="dev"
     ```
-    Note: The database user you provide must already be a user in your Postgres service and they need database creation privileges. 
+    Note: The database user you provide must already be a user in your Postgres service and they need database creation privileges.  
     4c. Create the database:  
     ```rails db:create```  
     4d. Finally, run the migrations to create our schema:  
