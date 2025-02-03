@@ -45,7 +45,7 @@ To follow this setup guide you should already have Ruby, Rails, RVM, Git, and Po
 4. We now need to run our postgres service and create the database.  
     4a. Ensure that the postgres service is running (this command may be different for your machine):  
     ```sudo service postgresql start```  
-    (Optional) You can now check the service status with: ```serice postgresql status```  
+    (Optional) You can now check the service status with: ```service postgresql status```  
     4b. Now create a ```.env``` file in your project's root directory. The ```.env``` should look something like the following (with your details substituted):  
     ```
         DB_NAME="file_management_backend_development"
