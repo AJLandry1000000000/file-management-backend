@@ -1,12 +1,11 @@
 # File Management App
 
 ## Table of contents
-- [Task Description](#table-of-contents)
+- [Task Description](#task-description)
 - [Set up guide](#set-up-guide)
 - [How to use](#how-to-use)
 - [Design choices](#design-choices)
 - [Further improvements](#further-improvements)
-
 
 
 ## Task description
@@ -56,6 +55,7 @@ To follow this setup guide you should already have Ruby, Rails, RVM, Git, and Po
         DB_PORT="5432" 
         ENV="dev"
     ```
+    Note: The database user you provide must already be a user in your Postgres service and they need database creation privileges. 
     4c. Create the database:  
     ```rails db:create```  
     4d. Finally, run the migrations to create our schema:  
@@ -82,7 +82,7 @@ Postgres is often used in large projects over other RDS options like SQLite3 so 
 The CSV file must have a first name, species, and gender. Records without an affiliation are skipped.  
 All record data must be alpha-numeric and can have hyphens, apostrophes, and spaces. All other characters are removed from the cell string. The cell string is then stripped of trailing/leading spaces and the first character is made uppercase.  
 
-The CSV processing is done in the ```app/services/csv_importer.rb``` file.  
+The CSV processing is done in the [back-end](https://github.com/AJLandry1000000000/file-management-backend) ```app/services/csv_importer.rb``` file.  
 
 
 ## Further improvements
